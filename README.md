@@ -1,6 +1,5 @@
-# HaseLab 麻雀牌写真認識テスト v3
+# HaseLab 2段階 写真認識テスト v4
 
-v2で `output0 [1,37,8400]` の5番目の値を確率として扱っていた問題を修正。
-このモデルでは5番目はraw logitとして扱い、全候補にsigmoidを適用する。
-0 logit = 0.5 なので閾値は0.52に変更。これにより大量の0.500候補を除外する。
-その他のモデル・分類処理はv2から変更なし。
+YOLO26 segmentation raw output [1,37,8400] を Ultralytics 仕様に合わせて解析。
+channel 4 は sigmoid を再適用せず tile class score として使用。
+全景写真向けに牌らしい縦横比と横一列クラスタを選択する後処理を追加。
