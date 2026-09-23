@@ -1,0 +1,11 @@
+[
+  "classifier-resnet50.onnx.data.part00",
+  "classifier-resnet50.onnx.data.part01",
+  "classifier-resnet50.onnx.data.part02",
+  "classifier-resnet50.onnx.data.part03",
+  "classifier-resnet50.onnx.data.part04",
+  "classifier-resnet50.onnx.data.part05",
+  "classifier-resnet50.onnx.data.part06",
+  "classifier-resnet50.onnx.data.part07",
+  "classifier-resnet50.onnx.data.part08"
+]
